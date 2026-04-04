@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head>
+<html lang = "es"><head>
 <link rel="stylesheet"href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}">
 <title>Sobre mí</title>
 
