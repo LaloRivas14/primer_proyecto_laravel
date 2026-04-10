@@ -6,8 +6,8 @@ use App\Http\Controllers\ContactoController;
 Route::get('/', function () {
     return view('principal');
 });
-Route::get('/compra', function () {
-    return view('compra');
+Route::get('/comprar', function () {
+    return view('comprar');
 });
 Route::get('/terminos-y-uso', function () {
     return view('terminos-y-uso');

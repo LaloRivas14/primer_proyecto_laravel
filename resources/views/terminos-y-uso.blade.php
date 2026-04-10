@@ -9,3 +9,7 @@
 </head>
 <body>
     @include('partials.barra-nav')
+    <h1 class="text-center mt-4">EN PROCESO</h1>
+
+</body>
+</html>
