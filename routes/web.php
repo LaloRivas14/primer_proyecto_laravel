@@ -6,8 +6,16 @@ use App\Http\Controllers\ContactoController;
 Route::get('/', function () {
     return view('principal');
 });
-Route::get('/sobre-mi', function () {
-return view('sobre-mi');
+Route::get('/compra', function () {
+    return view('compra');
+});
+Route::get('/terminos-y-uso', function () {
+    return view('terminos-y-uso');
+});
+
+
+Route::get('/quienes_somos', function () {
+return view('quienes_somos');
 });
 
 Route::get('/contacto',function (){
@@ -18,8 +26,13 @@ Route::get('principal',function (){
     return view('principal');
 });
 
-Route::post('/contacto', [ContactoController::class, 'procesar']);
+
 
 Route::get('/exito', function () {
     return view('exito');
 });
+
+
+Route::post('/contacto', [ContactoController::class, 'procesar']);
+?>
+
