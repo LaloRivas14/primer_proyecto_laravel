@@ -1,21 +1,15 @@
 <!DOCTYPE html>
-<html lang = "es"><head>
-<link rel="stylesheet"href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}">
-<title>Sobre mí</title>
-
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <title>OZZY</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="#">Ozzy remeras (en proceso)"</a>
+    @include('partials.barra-nav')
 
-        <div class="navbar-nav">
-            <a class="nav-link" href="/">Inicio</a>
-            <a class="nav-link active" href="/sobre-mi">Sobre Ozzy</a>
-            <a class="nav-link" href="/contacto">Contacto</a>
-        </div>
-    </div>
-</nav>
 <div class="container mt-4">
 
     <div class="card">

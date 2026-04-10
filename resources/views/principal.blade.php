@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    
     <meta charset="UTF-8">
     <title>OZZY</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}">
 </head>
 <body>
-    <div class="container mt-4">
+    @include('partials.barra-nav')
+    <h1 class="text-center mt-4">Bienvenidos a Ozzy Remeras</h1>
+
+    <div class="container mt-4 ">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             
             <!-- Indicadores (los puntitos abajo) -->

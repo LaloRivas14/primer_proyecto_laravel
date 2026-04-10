@@ -1,4 +1,14 @@
-<link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <title>OZZY</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}">
+</head>
+<body>
+    @include('partials.barra-nav')
 @if (isset($nombre) && isset($email))
     <div class="container">
     <div class="alert alert-success" role="alert">
