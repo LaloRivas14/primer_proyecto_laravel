@@ -45,7 +45,7 @@
             <li>Publicación de contenido ofensivo o fraudulento.</li>
         </ul>
 
-        <h3>El emprendimiento podrá restringir el acceso a usuarios que incumplan estas normas.</h3>
+        <p>El emprendimiento podrá restringir el acceso a usuarios que incumplan estas normas.</p>
 
         <h2>3. Productos e imágenes</h2>
         <p>Las imágenes publicadas tienen carácter ilustrativo.</p>
@@ -58,9 +58,11 @@
 
         <h2>5. Pedidos personalizados</h2>
         <p>Para productos personalizados:</p>
-        <p>El cliente es responsable de verificar nombres, imágenes y textos enviados.</p>
-        <p>No se realizarán modificaciones una vez aprobado el diseño final.</p>
-        <p>El emprendimiento podrá rechazar diseños ofensivos, ilegales o inapropiados.</p>
+        <ul>
+                <li>El cliente es responsable de verificar nombres, imágenes y textos enviados.</li>
+                <li>No se realizarán modificaciones una vez aprobado el diseño final.</li>
+                <li>El emprendimiento podrá rechazar diseños ofensivos, ilegales o inapropiados.</li>
+        </ul>
 
         <h2>6. Pagos y entregas</h2>
         <p>Las modalidades de pago y entrega serán informadas al momento de la compra o contacto.</p>
