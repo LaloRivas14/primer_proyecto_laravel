@@ -11,7 +11,7 @@
     @include('partials.barra-nav')
 <div class="card mt-4">
   <div class="card-body">
-    <form action="{{ url('/contacto') }}" method="POST">
+    <form action="{{ url('/contactanos') }}" method="POST">
       @csrf
       <div class="mb-3">
                     <label class="form-label">Nombre</label>
