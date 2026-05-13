@@ -217,7 +217,7 @@
         {{-- BRAND --}}
         <a class="ozzy-brand" href="/">
             <span class="ozzy-brand-text">Øzzy</span>
-            <span class="ozzy-brand-badge">Sublimado</span>
+            <span class="ozzy-brand-badge">Sublimados</span>
         </a>
 
         {{-- HAMBURGER (mobile) --}}
@@ -239,7 +239,7 @@
             </li>
             <li>
                 <a class="ozzy-nav-link {{ request()->is('contactanos') ? 'active' : '' }}"
-                   href="/contactanos">Contacto</a>
+                   href="/contactanos">Contactanos</a>
             </li>
             <li>
                 <a class="ozzy-nav-link {{ request()->is('terminos-y-uso') ? 'active' : '' }}"

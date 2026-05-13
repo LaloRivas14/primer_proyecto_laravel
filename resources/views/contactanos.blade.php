@@ -6,10 +6,58 @@
     <title>OZZY</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}">
+    <!--Estilos CSS -->
+    <link rel="stylesheet" href="{{ asset('CSS/styles-contact.css') }}">
+    <!-- fuente iconos -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+
 </head>
 <body>
     @include('partials.barra-nav')
-<div class="card mt-4">
+
+<section class ="contact-section">
+    <div class="container">
+
+        <span class="section-label" >Canales de contacto</span>
+
+        <div class="contact-cards">
+
+            {{-- Whastapp --}}
+            <a class="contact-card" href="https://wa.me/543624032771" target="_blank" rel="noopener">
+                <div class="contact-card-icon"><i class="fi fi-brands-whatsapp"></i>
+<i class="fi fi-brands-instagram"></i></div>
+                <span class="contact-card-label">Respuesta rapida </span>
+                <div class="contact-card-title">Whastapp</div>
+                <p class ="conctact-card-desc">Escribinos directo. Precios, cantidades, diseños - te respondemos al toque.</p>
+                <span class="contact-card-action">Abrir chat -></span>
+            </a>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{-- 
+<div class="container-contact">
   <div class="card-body">
     <form action="{{ url('/contactanos') }}" method="POST">
       @csrf
@@ -29,7 +77,7 @@
                 <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
     </form>
   </div>
-</div>
+</div>- --}}
 
 <script src="{{ asset('vendor/bootstrap/js/bootstrap.min.js') }}"></script>
 
