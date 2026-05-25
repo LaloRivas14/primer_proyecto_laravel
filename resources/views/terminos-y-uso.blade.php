@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>OZZY</title>
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('CSS/styles-terms.css') }}">
+@extends('layouts.app')
+
+@section('title', 'terminos y uso — Ozzy')
+
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('CSS/styles-terms.css') }}">
+@endpush
+
+@section('content')
     </head>
     <body>
-        @include('partials.barra-nav')
 
         <div class="container-terms">
             <h1 class="text-center mt-4">Términos y Condiciones de Uso</h1>
@@ -107,3 +107,4 @@
         </div>
     </body>
 </html>
+@endsection
