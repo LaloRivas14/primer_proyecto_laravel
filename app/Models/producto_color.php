@@ -4,15 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class personalizado extends Model
+class producto_color extends Model
 {
-    protected $table = 'personalizados';
+    protected $table = 'producto_colors';
 
     protected $fillable = [
         'producto_id',
         'color_id',
-        'talle_id',
-        'cantidad',
     ];
 
     public function producto()
@@ -23,10 +21,5 @@ class personalizado extends Model
     public function color()
     {
         return $this->belongsTo(Color::class);
-    }
-
-    public function talle()
-    {
-        return $this->belongsTo(Talle::class);
     }
 }
