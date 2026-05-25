@@ -4,7 +4,7 @@
 @section('title', 'Contacto — Ozzy')
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('css/contactanos.css') }}">
+    <link rel="stylesheet" href="{{ asset('CSS/contactanos.css') }}">
 @endpush
 
 @section('content')

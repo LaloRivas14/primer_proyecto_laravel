@@ -1,14 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'terminos y uso — Ozzy')
+@section('Terminos y uso', 'terminos y uso — Ozzy')
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('CSS/styles-terms.css') }}">
 @endpush
 
 @section('content')
-    </head>
-    <body>
+
 
         <div class="container-terms">
             <h1 class="text-center mt-4">Términos y Condiciones de Uso</h1>
@@ -105,6 +104,5 @@
 
         <p>El uso de este sitio implica la aceptación total de los presentes términos y condiciones.</p>
         </div>
-    </body>
-</html>
+
 @endsection
