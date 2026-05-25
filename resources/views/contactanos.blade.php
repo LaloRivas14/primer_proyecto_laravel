@@ -4,7 +4,7 @@
 @section('title', 'Contacto — Ozzy')
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('CSS/contactanos.css') }}">
+    <link rel="stylesheet" href="{{ asset('CSS/contactanos.css') }}?v=2">
 @endpush
 
 @section('content')
@@ -29,7 +29,7 @@
             {{-- WhatsApp --}}
             <a class="contact-card" href="https://wa.me/543624032771" target="_blank" rel="noopener">
                 <div class="contact-card-icon">
-                    <img src="public/images/icons/whatsapp_icon.png" alt="WhatsApp">
+                    <img src="{{ asset('images/icons/whatsapp_icon.png') }}" alt="WhatsApp">
                 </div>
                 <span class="contact-card-label">Respuesta rápida</span>
                 <div class="contact-card-title">WhatsApp</div>
@@ -40,7 +40,7 @@
             {{-- Instagram --}}
             <a class="contact-card" href="https://www.instagram.com/ozzy.sw" target="_blank" rel="noopener">
                 <div class="contact-card-icon">
-                    <img src="public/images/icons/instagram_icon.png" alt="Instagram">
+                    <img src="{{ asset('images/icons/instagram_icon.png') }}" alt="Instagram">
                 </div>
                 <span class="contact-card-label">Seguinos</span>
                 <div class="contact-card-title">Instagram</div>
@@ -51,7 +51,7 @@
             {{-- Email --}}
             <a class="contact-card" href="mailto:EMAIL@REEMPLAZARCuandoLoTengaJa.COM">
                 <div class="contact-card-icon">
-                    <img src="public/images/icons/correo_icon.png" alt="Email">
+                    <img src="{{ asset('images/icons/correo_icon.png') }}" alt="Email">
                 </div>
                 <span class="contact-card-label">Consultas formales</span>
                 <div class="contact-card-title">Email</div>

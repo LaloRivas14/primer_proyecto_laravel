@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@400;500;600&display=swap');
+
+:root {
+    --ozzy-black:  #0a0a0a;
+    --ozzy-dark:   #141414;
+    --ozzy-card:   #111111;
+    --ozzy-border: #1f1f1f;
+    --ozzy-white:  #ffffff;
+    --ozzy-gray:   #a0a0a0;
+    --ozzy-accent: #e8e8e8;
+}
+
+/* ══════════════════════════════
+   HERO
+══════════════════════════════ */
+.about-hero {
+    background-color: var(--ozzy-black);
+    padding: 90px 1.5rem 70px;
+    text-align: center;
+    border-bottom: 2px solid var(--ozzy-border);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Texto de fondo decorativo */
+.about-hero::before {
+    content: 'ØZZY';
+    position: absolute;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 22vw;
+    color: rgba(255,255,255,0.025);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.about-hero-inner {
+    position: relative; /* para que quede por encima del ::before */
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.about-hero-tag {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--ozzy-gray);
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.about-hero h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: clamp(3.5rem, 9vw, 7rem);
+    text-transform: uppercase;
+    color: var(--ozzy-white);
+    line-height: 0.95;
+    margin: 0 0 1.25rem;
+    text-shadow: 4px 4px 0px #000;
+}
+
+.about-hero h1 span {
+    color: var(--ozzy-white);
+}
+
+.about-hero p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.1rem;
+    color: var(--ozzy-gray);
+    line-height: 1.6;
+}
+
+/* ══════════════════════════════
+   SECCIÓN PRINCIPAL (2 columnas)
+══════════════════════════════ */
+.about-section {
+    background-color: var(--ozzy-dark);
+    padding: 80px 1.5rem;
+}
+
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* IMAGEN / LOGO */
+.about-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--ozzy-black);
+    border: 1px solid var(--ozzy-border);
+    border-radius: 8px;
+    padding: 48px 32px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    object-fit: contain;
+    filter: brightness(1);
+    border-radius: 8px;
+}
+
+/* TEXTO */
+.about-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ozzy-gray);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1.25rem;
+}
+
+.about-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--ozzy-border);
+}
+
+.about-text h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    text-transform: uppercase;
+    color: var(--ozzy-white);
+    line-height: 1;
+    margin: 0 0 1.5rem;
+    text-shadow: 3px 3px 0px #000;
+}
+
+.about-text p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.975rem;
+    color: #aaaaaa;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+}
+
+.about-cta {
+    display: inline-block;
+    margin-top: 1rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: var(--ozzy-white);
+    color: var(--ozzy-black);
+    padding: 0.65rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.15s;
+}
+
+.about-cta:hover {
+    background: var(--ozzy-accent);
+    transform: translateY(-1px);
+    color: var(--ozzy-black);
+}
+
+/* ══════════════════════════════
+   FRANJA DE VALORES
+══════════════════════════════ */
+.about-values {
+    background-color: var(--ozzy-black);
+    border-top: 2px solid var(--ozzy-border);
+    padding: 70px 1.5rem;
+}
+
+.about-values-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--ozzy-border);
+    border: 1px solid var(--ozzy-border);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.about-value {
+    background: var(--ozzy-card);
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    transition: background 0.2s;
+}
+
+.about-value:hover {
+    background: #161616;
+}
+
+.about-value-number {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: #2a2a2a;
+    line-height: 1;
+}
+
+.about-value h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ozzy-white);
+    margin: 0;
+}
+
+.about-value p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.9rem;
+    color: var(--ozzy-gray);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ══════════════════════════════
+   RESPONSIVE
+══════════════════════════════ */
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-image {
+        padding: 32px;
+    }
+
+    .about-values-grid {
+        grid-template-columns: 1fr;
+    }
+}
