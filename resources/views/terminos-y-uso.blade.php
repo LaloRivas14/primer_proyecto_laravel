@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
-@section('Terminos y uso', 'terminos y uso — Ozzy')
+@section('title', 'terminos y uso — Ozzy')
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('CSS/styles-terms.css') }}">
+    <link rel="stylesheet" href="{{ asset('CSS/styles-terms.css') }}?v=3">
 @endpush
 
 @section('content')
