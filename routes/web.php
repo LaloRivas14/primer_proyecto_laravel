@@ -1,38 +1,20 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ContactoController;
 
 Route::get('/', function () {
-    return view('principal');
-});
-Route::get('/comprar', function () {
-    return view('comprar');
-});
-Route::get('/terminos-y-uso', function () {
-    return view('terminos-y-uso');
+    return view('welcome');
 });
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/quienes_somos', function () {
-return view('quienes_somos');
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/contactanos',function (){
-    return view('contactanos');
-});
-
-Route::get('principal',function (){
-    return view('principal');
-});
-
-
-
-Route::get('/exito', function () {
-    return view('exito');
-});
-
-
-Route::post('/contacto', [ContactoController::class, 'procesar']);
-?>
-
+require __DIR__.'/auth.php';
