@@ -1,9 +1,9 @@
-@extends('layouts.app')
+@extends('layouts.ozzy')
 
 @section('title', 'terminos y uso — Ozzy')
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('CSS/styles-terms.css') }}?v=3">
+    <link rel="stylesheet" href="{{ asset('CSS/styles-terms.css') }}?v=2">
 @endpush
 
 @section('content')

@@ -1,5 +1,5 @@
 
-@extends('layouts.app')
+@extends('layouts.ozzy')
 
 @section('title', 'Contacto — Ozzy')
 

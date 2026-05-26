@@ -1,9 +1,9 @@
-@extends('layouts.app')
+@extends('layouts.ozzy')
 
 @section('title', 'Sobre Ozzy')
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('css/quienes-somos.css') }}?>v=2">
+    <link rel="stylesheet" href="{{ asset('CSS/quienes-somos.css') }}?v=2">
 @endpush
 
 @section('content')
