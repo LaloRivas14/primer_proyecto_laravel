@@ -4,22 +4,20 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class producto_color extends Model
+class imagenesProducto extends Model
 {
-    protected $table = 'producto_colors';
-
     protected $fillable = [
         'producto_id',
-        'color_id',
+        'ruta',
+        'es_principal',
+    ];
+
+    protected $casts = [
+        'es_principal' => 'boolean',
     ];
 
     public function producto()
     {
         return $this->belongsTo(Producto::class);
-    }
-
-    public function color()
-    {
-        return $this->belongsTo(Color::class);
     }
 }

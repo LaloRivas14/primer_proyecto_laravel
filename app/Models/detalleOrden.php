@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class detalle_orden extends Model
+class detalleOrden extends Model
 {
     protected $fillable = [
         'orden_id',
