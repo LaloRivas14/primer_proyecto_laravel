@@ -11,10 +11,10 @@ class contacto extends Model
         'email',
         'telefono',
         'mensaje',
-        'estado',
+        'respondido',
     ];
 
     protected $casts = [
-        'estado' => 'string',
+        'respondido' => 'boolean',
     ];
 }

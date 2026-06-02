@@ -10,11 +10,16 @@ class stock extends Model
         'producto_id',
         'color_id',
         'cantidad',
+        'talle_id',
     ];
     protected $casts = [
         'cantidad' => 'integer',
     ];
 
+    public function talle()
+    {
+        return $this->belongsTo(Talle::class);
+    }
     public function producto()
     {
         return $this->belongsTo(Producto::class);

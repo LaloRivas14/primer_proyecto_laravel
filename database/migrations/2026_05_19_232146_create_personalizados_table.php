@@ -13,12 +13,21 @@ return new class extends Migration
     {
         Schema::create('personalizados', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('cliente_id')->constrained('clientes')->onDelete('cascade');
+            $table->foreignId('user_id')->nullable()->constrained('users')->onDelete('cascade');
+            $table->foreignId('producto_id')->constrained('productos')->onDelete('cascade');
             $table->foreignId('categoria_id')->constrained('categorias')->onDelete('cascade');
             $table->text('descripcion');
             $table->string('imagen_referencia', 255)->nullable();
             $table->foreignId('talle_id')->constrained('talles')->onDelete('cascade');
             $table->integer('cantidad')->default(1);
+            $table->decimal('precio_estimado', 10, 2);
+            $table->enum('estado', [
+                'pendiente',
+                'aprobado',
+                'en_proceso',
+                'terminado',
+                'cancelado',
+            ])->default('pendiente');
             $table->timestamps();
         });
     }

@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('ordenes', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('producto_id')->constrained('productos')->onDelete('cascade');
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
             $table->enum('estado',['pendientes','pagado','enviado','entregado','cancelado'])->default('pendientes'); 
             $table->decimal('total', 10, 2);
             $table->decimal('subtotal', 10, 2);

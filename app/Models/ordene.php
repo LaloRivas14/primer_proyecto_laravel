@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class ordene extends Model
 {
     protected $fillable = [
-        'producto_id',
+        'user_id',
         'estado',
         'total',
         'subtotal',
@@ -21,8 +21,8 @@ class ordene extends Model
         'envio' => 'decimal:2',
     ];
 
-    public function producto()
+    public function user()
     {
-        return $this->belongsTo(Producto::class);
+        return $this->belongsTo(User::class);
     }
 }

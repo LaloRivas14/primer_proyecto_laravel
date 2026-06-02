@@ -16,9 +16,9 @@ class producto extends Model
         'categoria_id'
     ];
 
-    protected $cast =[
+    protected $casts = [
         'estado' => 'boolean',
-        'precio' => 'decimal:2'
+        'precio' => 'decimal:2',
     ];
 
     public function categoria()

@@ -35,6 +35,21 @@
                 <a class="ozzy-nav-link {{ request()->is('terminos-y-uso') ? 'active' : '' }}"
                    href="/terminos-y-uso">Términos</a>
             </li>
+            @guest
+                
+            <li>
+                <a class="ozzy-nav-link {{ request()->is('login') ? 'active' : '' }}"
+                   href="{{ route('login') }}">Logearse</a>
+            </li>
+            <li>
+                <a class="ozzy-nav-link {{ request()->is('register') ? 'active' : '' }}"
+                   href="{{ route('register') }}">Registrarse</a>
+            </li>
+            @endguest
+            <li>
+                <a class="ozzy-nav-link" {{ request()->is('dashboard') ? 'active' : '' }}"
+                   href="{{ route('dashboard') }}">DashBoard</a>
+            </li>
             <li>
                 <a class="ozzy-nav-link cta" href="/comprar">Comprar</a>
             </li>

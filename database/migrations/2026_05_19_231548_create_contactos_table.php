@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('email',150);
             $table->string('telefono',20)->nullable();
             $table->text('mensaje');
-            $table->enum('estado', ['pendiente', 'respondido'])->default('pendiente');
+            $table->boolean('respondido')->default(false);
             $table->timestamps();
         });
     }
