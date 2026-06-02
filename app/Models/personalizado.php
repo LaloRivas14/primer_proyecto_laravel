@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class personalizado extends Model
+class Personalizado extends Model
 {
     protected $table = 'personalizados';
 
@@ -24,10 +24,12 @@ class personalizado extends Model
     {
         return $this->belongsTo(User::class);
     }
+
     public function categoria()
     {
         return $this->belongsTo(Categoria::class);
     }
+
     public function producto()
     {
         return $this->belongsTo(Producto::class);

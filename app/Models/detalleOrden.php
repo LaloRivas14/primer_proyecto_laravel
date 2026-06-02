@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class detalleOrden extends Model
+class DetalleOrden extends Model
 {
     protected $fillable = [
         'orden_id',
@@ -23,7 +23,7 @@ class detalleOrden extends Model
 
     public function orden()
     {
-        return $this->belongsTo(ordene::class);
+        return $this->belongsTo(Orden::class);
     }
 
     public function producto()

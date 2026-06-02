@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class stock extends Model
+class Stock extends Model
 {
     protected $fillable = [
         'producto_id',
@@ -12,6 +12,7 @@ class stock extends Model
         'cantidad',
         'talle_id',
     ];
+
     protected $casts = [
         'cantidad' => 'integer',
     ];
@@ -20,6 +21,7 @@ class stock extends Model
     {
         return $this->belongsTo(Talle::class);
     }
+
     public function producto()
     {
         return $this->belongsTo(Producto::class);
